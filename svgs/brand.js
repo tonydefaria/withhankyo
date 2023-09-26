@@ -2,7 +2,7 @@
 
 export default function Brand() {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="548.26" height="160" viewBox="0 0 548.26 160" class="img">
+    <svg xmlns="http://www.w3.org/2000/svg" width="548.26" height="160" viewBox="0 0 548.26 160" className="img">
       <title>Hankyō</title>
       <g>
         <path d="M64.607.768V47.206H26.4V.768H0V116.692H26.4V70.927h38.2v45.765h26.4V.768Z" transform="translate(0 4.615)" fill="#101820"/>
