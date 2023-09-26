@@ -12,7 +12,7 @@ Disallow: /styles
 Disallow: /svgs
 
 # Host
-Host: https://www.domain.com
+Host: https://www.hankyo.co
 
 # Sitemaps
-Sitemap: https://www.domain.com/sitemap.xml
+Sitemap: https://www.hankyo.co/sitemap.xml

@@ -2,7 +2,7 @@
 // https://www.npmjs.com/package/next-sitemap
 
 module.exports = {
-  siteUrl: "https://www.domain.com",
+  siteUrl: "https://www.hankyo.co",
   changefreq: "weekly",
   priority: 0.8,
   sitemapSize: 5000,

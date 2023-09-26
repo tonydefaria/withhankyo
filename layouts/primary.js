@@ -7,12 +7,14 @@
 import React from "react"
 
 // Import custom components
+import FaviconComponent from "../components/favicon_component"
 import MetaComponent from "../components/meta_component";
 import CopyrightComponent from "../components/copyright_component"
 
 export default function Primary({ children }) {
   return (
     <div className="primary" id="primary">
+      <FaviconComponent />
       <MetaComponent />
       <main className="universal main" id="main">
         <div className="universal-box">
