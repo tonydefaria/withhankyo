@@ -18,13 +18,11 @@ class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>
-          {/*
-            <Script
-              id="cabin"
-              src="https://cabin.domain.com/hello.js"
-              strategy="beforeInteractive"
-            />
-          */}
+          <Script
+            id="cabin"
+            src="https://cabin.hankyo.co/hello.js"
+            strategy="beforeInteractive"
+          />
         </Head>
         <body className="lock-menu scroll body" id="body top">
           <Main />
