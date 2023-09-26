@@ -1,0 +1,12 @@
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// File: Scroll
+// -------------------------------------------------------------
+
+.noscroll {
+  height: 0 !important;
+  width: 0 !important;
+  overflow: hidden !important;
+  -ms-overflow-style: none !important;
+  scrollbar-width: none !important;
+  touch-action: none !important;
+}

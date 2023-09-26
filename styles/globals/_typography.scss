@@ -1,0 +1,125 @@
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// File: Typography
+// -------------------------------------------------------------
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  display: block;
+  float: left;
+  font-family: $sans;
+  font-weight: 900;
+  hyphens: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+h1 { @include header-size-xxl; }
+h2 { @include header-size-xl; }
+h3 { @include header-size-l; }
+h4 { @include header-size-m; }
+h5 { @include header-size-s; }
+h6 { @include header-size-xs; }
+
+p {
+  @include font-size-m;
+  display: block;
+  float: left;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+ol,
+ul {
+  display: block;
+  float: left;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  li {
+    float: left;
+    margin: 0;
+    padding: 0;
+    width: auto;
+  }
+}
+
+p,
+li {
+  a {
+    display: inline;
+    float: none;
+    font-size: inherit;
+    font-weight: 900;
+    line-height: inherit;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+abbr,
+code,
+del,
+em,
+mark,
+small,
+sub,
+sup,
+strong {
+  line-height: inherit;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+}
+abbr {
+  cursor: help;
+  text-decoration: underline dashed;
+}
+code {
+  @include header-size-xs;
+  -webkit-box-decoration-break: clone;
+  background-color: $black-100;
+  box-decoration-break: clone;
+  border-radius: 3px;
+  line-height: inherit;
+  padding: 0 4px;
+}
+del {
+  text-decoration: line-through;
+}
+mark {
+  background-color: yellow;
+}
+small {
+  font-size: 70%;
+}
+sub {
+  font-size: 70%;
+}
+sup {
+  font-size: 70%;
+}
+em {
+  font-style: italic;
+}
+strong {
+  font-weight: 900;
+}
+
+// Media Query 959px
+// -------------------------------------------------------------
+@media #{$mobile} {
+  ol,
+  ul {
+    li {
+      margin: 8px 0;
+    }
+  }
+}

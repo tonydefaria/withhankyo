@@ -1,0 +1,103 @@
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// File: Separators
+// -------------------------------------------------------------
+
+@mixin separator-default {
+  appearance: none;
+  border: 0;
+  box-sizing: border-box;
+  display: block;
+  float: left;
+  height: 0;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+@mixin separator-xxs {
+  @include separator-default;
+  margin: 6px 0; // 0 0 12px;
+
+  // Mobile
+  // -------------------------------------------------------------
+  @media #{$mobile} {
+    margin: 5px 0; // margin: 0 0 10px;
+  }
+}
+
+
+@mixin separator-xs {
+  @include separator-default;
+  margin: 7px 0; // margin: 0 0 14px;
+
+  // Mobile
+  // -------------------------------------------------------------
+  @media #{$mobile} {
+    margin: 6px 0; // margin: 0 0 12px;
+  }
+}
+
+@mixin separator-s {
+  @include separator-default;
+  margin: 8px 0; // margin: 0 0 16px;
+
+  // Mobile
+  // -------------------------------------------------------------
+  @media #{$mobile} {
+    margin: 7px 0; // margin: 0 0 14px;
+  }
+}
+
+@mixin separator-m {
+  @include separator-default;
+  margin: 10px 0; // margin: 0 0 20px;
+
+  // Mobile
+  // -------------------------------------------------------------
+  @media #{$mobile} {
+    margin: 8px 0; // margin: 0 0 16px;
+  }
+}
+
+@mixin separator-l {
+  @include separator-default;
+  margin: 12px 0; // margin: 0 0 24px;
+
+  // Mobile
+  // -------------------------------------------------------------
+  @media #{$mobile} {
+    margin: 10px 0; // margin: 0 0 20px;
+  }
+}
+
+@mixin separator-xl {
+  @include separator-default;
+  margin: 16px 0; // margin: 0 0 32px;
+
+  // Mobile
+  // -------------------------------------------------------------
+  @media #{$mobile} {
+    margin: 12px 0; // margin: 0 0 24px;
+  }
+}
+
+@mixin separator-xxl {
+  @include separator-default;
+  margin: 24px 0; // margin: 0 0 48px;
+
+  // Mobile
+  // -------------------------------------------------------------
+  @media #{$mobile} {
+    margin: 16px 0; // margin: 0 0 32px;
+  }
+}
+
+// Classes
+// -------------------------------------------------------------
+.separator-xxs    { @include separator-xxs; }
+.separator-xs     { @include separator-xs; }
+.separator-s      { @include separator-s; }
+.separator-m      { @include separator-m; }
+.separator-l      { @include separator-l; }
+.separator-xl     { @include separator-xl; }
+.separator-xxl    { @include separator-xxl; }

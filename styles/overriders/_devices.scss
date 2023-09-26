@@ -1,0 +1,27 @@
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// File: Devices
+// -------------------------------------------------------------
+
+.mobile {
+  display: none !important;
+  visibility: hidden !important;
+}
+
+.desktop {
+  display: block !important;
+  visibility: visible !important;
+}
+
+// Mobile
+// -------------------------------------------------------------
+@media #{$mobile} {
+  .mobile {
+    display: block !important;
+    visibility: visible !important;
+  }
+
+  .desktop {
+    display: none !important;
+    visibility: hidden !important;
+  }
+}

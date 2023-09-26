@@ -1,0 +1,30 @@
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// File: Brand
+// -------------------------------------------------------------
+
+$class: "brand";
+
+.#{$class} {
+  float: left;
+  width: 100%;
+  .#{$class}-box {
+    float: left;
+    width: 100%;
+    .#{$class}-item {
+      float: left;
+      width: 60%;
+    }
+  }
+}
+
+// Mobile
+// -------------------------------------------------------------
+@media #{$mobile} {
+  .#{$class} {
+    .#{$class}-box {
+      .#{$class}-item {
+        width: 80%;
+      }
+    }
+  }
+}

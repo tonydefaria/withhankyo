@@ -1,0 +1,110 @@
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// File: Font Sizes
+// -------------------------------------------------------------
+
+@mixin font-size-xxs {
+  font-size: 14px;
+  line-height: 22px;
+
+  @media #{$mobile} {
+    font-size: 12px;
+    line-height: 20px;
+  }
+}
+
+@mixin font-size-xs {
+  font-size: 16px;
+  line-height: 24px;
+
+  @media #{$mobile} {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+
+@mixin font-size-s {
+  font-size: 20px;
+  line-height: 32px;
+
+  @media #{$mobile} {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+@mixin font-size-m {
+  font-size: 24px;
+  line-height: 40px;
+
+  @media #{$mobile} {
+    font-size: 20px;
+    line-height: 32px;
+  }
+}
+
+@mixin font-size-l {
+  font-size: 32px;
+  line-height: 48px;
+
+  @media #{$mobile} {
+    font-size: 24px;
+    line-height: 40px;
+  }
+}
+
+@mixin font-size-xl {
+  font-size: 40px;
+  line-height: 56px;
+
+  @media #{$mobile} {
+    font-size: 32px;
+    line-height: 48px;
+  }
+}
+
+@mixin font-size-xxl {
+  font-size: 56px;
+  line-height: 72px;
+
+  @media #{$mobile} {
+    font-size: 40px;
+    line-height: 56px;
+  }
+}
+
+// Classes
+// -------------------------------------------------------------
+.font-size-xxs {
+  @include font-size-xxs;
+  p, div { @include font-size-xxs; }
+}
+
+.font-size-xs {
+  @include font-size-xs;
+  p, div { @include font-size-xs; }
+}
+
+.font-size-s {
+  @include font-size-s;
+  p, div { @include font-size-s; }
+}
+
+.font-size-m {
+  @include font-size-m;
+  p, div { @include font-size-m; }
+}
+
+.font-size-l {
+  @include font-size-l;
+  p, div { @include font-size-l; }
+}
+
+.font-size-xl {
+  @include font-size-xl;
+  p, div { @include font-size-xl; }
+}
+
+.font-size-xxl {
+  @include font-size-xxl;
+  p, div { @include font-size-xxl; }
+}

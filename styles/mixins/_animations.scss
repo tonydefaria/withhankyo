@@ -1,0 +1,72 @@
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// File: Animations
+// -------------------------------------------------------------
+
+@mixin hover-animation($duration) {
+  transition:
+    background-color $duration ease,
+    border $duration ease,
+    border-color $duration ease,
+    color $duration ease,
+    fill $duration ease;
+}
+
+@mixin fade-in-animation($duration) {
+  opacity: 1;
+  animation-name: fadeIn;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: $duration;
+}
+
+@mixin fade-out-animation($duration) {
+  opacity: 1;
+  animation-name: fadeOut;
+  animation-fill-mode: backwards;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: $duration;
+}
+
+@mixin expandable-up-animation($duration) {
+  height: 0;
+  transition: all ease-in-out $duration forwards;
+}
+
+@mixin expandable-down-animation($duration) {
+  transition: expandable-down ease-in-out $duration forwards;
+}
+
+// Keyframes
+// -------------------------------------------------------------
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  25% { opacity: 1; }
+  100% { opacity: 1; }
+}
+
+@keyframes fadeOut {
+  0% { opacity: 1; }
+  25% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+@keyframes expandable-up {
+  0% { height: 100vh; }
+  100% { height: 0; }
+}
+
+@keyframes expandable-down {
+  0% { height: 0; }
+  100% { height: 100vh; }
+}
+
+// Classes
+// -------------------------------------------------------------
+.hover-animation            { @include hover-animation(.3s); }
+.fade-in-animation          { @include fade-in-animation(0s); }
+.fade-out-animation         { @include fade-out-animation(.3s); }
+.expandable-up-animation    { @include expandable-up-animation(1s); }
+.expandable-down-animation  { @include expandable-down-animation(1s); }

@@ -1,0 +1,36 @@
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// File: Breakpoints
+// -------------------------------------------------------------
+
+//
+// Breakpoint Width: 959px
+// ------------------------------------------------------------
+$mobile: "(max-width: 959px)" !default;
+
+// Artboard Width: 240px
+// ------------------------------------------------------------
+$xxs: "(max-width: 359px)" !default;
+
+// Artboard Width: 360px
+// ------------------------------------------------------------
+$xs: "(min-width: 360px) and (max-width: 479px)" !default;
+
+// Artboard Width: 480px
+// ------------------------------------------------------------
+$s: "(min-width: 480px) and (max-width: 719px)" !default;
+
+// Breakpoint Width: 720px
+// ------------------------------------------------------------
+$m: "(min-width: 720px) and (max-width: 959px)" !default;
+
+// Breakpoint Width: 960px
+// ------------------------------------------------------------
+$l: "(min-width: 960px) and (max-width: 1439px)" !default;
+
+// Breakpoint Width: 1440px
+// ------------------------------------------------------------
+$xl: "(min-width: 1440px) and (max-width: 1919px)" !default;
+
+// Breakpoint Width: 1920px
+// ------------------------------------------------------------
+$xxl: "(min-width: 1920px)" !default;

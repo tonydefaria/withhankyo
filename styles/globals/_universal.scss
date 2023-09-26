@@ -1,0 +1,37 @@
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// File: Universal
+// -------------------------------------------------------------
+
+$class: "universal";
+
+.#{$class} {
+  float: left;
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+  .#{$class}-box {
+    @include clearfix;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0;
+  }
+  .#{$class}-row {
+    float: left;
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+    width: 100%;
+  }
+}
+
+// Media Query 959px
+// -------------------------------------------------------------
+@media #{$mobile} {
+  .#{$class} {
+    .#{$class}-box {
+      max-width: 959px;
+    }
+    .#{$class}-row {
+    }
+  }
+}

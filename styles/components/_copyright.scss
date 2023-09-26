@@ -1,0 +1,31 @@
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// File: Copyright
+// -------------------------------------------------------------
+
+$class: "copyright";
+
+.#{$class} {
+  float: left;
+  .#{$class}-box {
+    float: left;
+    padding: 16px 16px 16px 0;
+    width: auto;
+    .#{$class}-item {
+      float: left;
+      padding: 16px 16px 16px 0;
+    }
+  }
+}
+
+// Mobile
+// -------------------------------------------------------------
+@media #{$mobile} {
+  .#{$class} {
+    .#{$class}-box {
+      padding: 8px;
+      .#{$class}-item {
+        padding: 8px;
+      }
+    }
+  }
+}

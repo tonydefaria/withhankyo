@@ -1,0 +1,128 @@
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// File: Header Sizes
+// -------------------------------------------------------------
+
+@mixin header-size-xxs {
+  font-size: 14px;
+  line-height: 16px;
+
+  @media #{$mobile} {
+    font-size: 12px;
+    line-height: 14px;
+  }
+}
+
+@mixin header-size-xs {
+  font-size: 16px;
+  line-height: 18px;
+
+  @media #{$mobile} {
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
+
+@mixin header-size-s {
+  font-size: 20px;
+  line-height: 24px;
+
+  @media #{$mobile} {
+    font-size: 16px;
+    line-height: 18px;
+  }
+}
+
+@mixin header-size-m {
+  font-size: 24px;
+  line-height: 28px;
+
+  @media #{$mobile} {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
+@mixin header-size-l {
+  font-size: 32px;
+  line-height: 38px;
+
+  @media #{$mobile} {
+    font-size: 24px;
+    line-height: 28px;
+  }
+}
+
+@mixin header-size-xl {
+  font-size: 40px;
+  line-height: 48px;
+
+  @media #{$mobile} {
+    font-size: 32px;
+    line-height: 38px;
+  }
+}
+
+@mixin header-size-xxl {
+  font-size: 56px;
+  line-height: 64px;
+
+  @media #{$mobile} {
+    font-size: 36px;
+    line-height: 44px;
+  }
+}
+
+@mixin header-size-display {
+  font-size: 8vw;
+  line-height: 1.1;
+  @media #{$mobile} {
+  font-size: 9.5vw;
+  line-height: 1.1;
+  }
+  // Keep font size within scale and not exceed the universal placeholder viewpoint.
+  @media screen and (min-width: 1200px) {
+    font-size: 96px;
+  }
+}
+
+// Classes
+// -------------------------------------------------------------
+.header-size-xxs {
+  @include header-size-xxs;
+  p, div { @include header-size-xxs; }
+}
+
+.header-size-xs {
+  @include header-size-xs;
+  p, div { @include header-size-xs; }
+}
+
+.header-size-s {
+  @include header-size-s;
+  p, div { @include header-size-s; }
+}
+
+.header-size-m {
+  @include header-size-m;
+  p, div { @include header-size-m; }
+}
+
+.header-size-l {
+  @include header-size-l;
+  p, div { @include header-size-l; }
+}
+
+.header-size-xl {
+  @include header-size-xl;
+  p, div { @include header-size-xl; }
+}
+
+.header-size-xxl {
+  @include header-size-xxl;
+  p, div { @include header-size-xxl; }
+}
+
+.header-size-display {
+  @include header-size-display;
+  p, div { @include header-size-display; }
+}

@@ -1,0 +1,208 @@
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// File: Links
+// -------------------------------------------------------------
+
+@mixin link-default {
+  @include hover-animation(.5s);
+  appearance: none;
+  background-color: transparent;
+  border: 0;
+  display: block;
+  float: left;
+  font-weight: 900;
+  letter-spacing: .030em;
+  width: auto;
+  &:link,
+  &:visited {
+    @include hover-animation(.5s);
+    .icon { object, svg, svg * { @include hover-animation(.5s); } }
+  }
+  &:hover,
+  &:active {
+    @include hover-animation(.5s);
+    .icon { object, svg, svg * { @include hover-animation(.5s); } }
+  }
+  &.underline {
+    text-decoration-line: underline;
+    text-decoration-thickness: 8px;
+    text-underline-offset: 12px;
+  }
+  &.hover-underline {
+    &:hover,
+    &:active {
+      text-decoration-line: underline;
+      text-decoration-thickness: 8px;
+      text-underline-offset: 12px;
+    }
+  }
+
+  span,
+  .icon {
+    display: block;
+    float: left;
+    line-height: inherit;
+    width: auto;
+    object,
+    img,
+    svg {
+      border: none;
+      float: left;
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  @media #{$mobile} {
+    &.underline {
+      text-decoration-thickness: 6px;
+      text-underline-offset: 8px;
+    }
+    &.hover-underline {
+      &:hover,
+      &:active {
+        text-decoration-thickness: 6px;
+        text-underline-offset: 8px;
+      }
+    }
+  }
+}
+
+@mixin link {
+  @include link-default;
+}
+
+@mixin link-xs {
+  @include link-default;
+  @include font-size-xs;
+  &.underline {
+    text-decoration-line: underline;
+    text-decoration-thickness: 4px;
+    text-underline-offset: 6px;
+  }
+  &.hover-underline {
+    &:hover,
+    &:active {
+      text-decoration-line: underline;
+      text-decoration-thickness: 4px;
+      text-underline-offset: 6px;
+    }
+  }
+
+  @media #{$mobile} {
+    &.underline {
+      text-decoration-thickness: 3px;
+      text-underline-offset: 4px;
+    }
+    &.hover-underline {
+      &:hover,
+      &:active {
+        text-decoration-thickness: 3px;
+        text-underline-offset: 4px;
+      }
+    }
+  }
+}
+
+@mixin link-s {
+  @include link-default;
+  @include font-size-s;
+  &.underline {
+    text-decoration-line: underline;
+    text-decoration-thickness: 6px;
+    text-underline-offset: 8px;
+  }
+  &.hover-underline {
+    &:hover,
+    &:active {
+      text-decoration-line: underline;
+      text-decoration-thickness: 6px;
+      text-underline-offset: 8px;
+    }
+  }
+
+  @media #{$mobile} {
+    &.underline {
+      text-decoration-thickness: 4px;
+      text-underline-offset: 6px;
+    }
+    &.hover-underline {
+      &:hover,
+      &:active {
+        text-decoration-thickness: 4px;
+        text-underline-offset: 6px;
+      }
+    }
+  }
+}
+
+@mixin link-m {
+  @include link-default;
+  @include font-size-m;
+  &.underline {
+    text-decoration-line: underline;
+    text-decoration-thickness: 8px;
+    text-underline-offset: 12px;
+  }
+  &.hover-underline {
+    &:hover,
+    &:active {
+      text-decoration-line: underline;
+      text-decoration-thickness: 8px;
+      text-underline-offset: 12px;
+    }
+  }
+
+  @media #{$mobile} {
+    &.underline {
+      text-decoration-thickness: 6px;
+      text-underline-offset: 8px;
+    }
+    &.hover-underline {
+      &:hover,
+      &:active {
+        text-decoration-thickness: 6px;
+        text-underline-offset: 8px;
+      }
+    }
+  }
+}
+
+@mixin link-l {
+  @include link-default;
+  @include font-size-l;
+  &.underline {
+    text-decoration-line: underline;
+    text-decoration-thickness: 10px;
+    text-underline-offset: 14px;
+  }
+  &.hover-underline {
+    &:hover,
+    &:active {
+      text-decoration-line: underline;
+      text-decoration-thickness: 10px;
+      text-underline-offset: 14px;
+    }
+  }
+
+  @media #{$mobile} {
+    &.underline {
+      text-decoration-thickness: 8px;
+      text-underline-offset: 12px;
+    }
+    &.hover-underline {
+      &:hover,
+      &:active {
+        text-decoration-thickness: 8px;
+        text-underline-offset: 12px;
+      }
+    }
+  }
+}
+
+// Classes
+// -------------------------------------------------------------
+.link     { @include link; }
+.link-xs  { @include link-xs; }
+.link-s   { @include link-s; }
+.link-m   { @include link-m; }
+.link-l   { @include link-l; }

@@ -1,0 +1,18 @@
+# *
+User-agent: *
+Allow: /
+
+# *
+User-agent: *
+Disallow: /builders
+Disallow: /components
+Disallow: /layouts
+Disallow: /pages
+Disallow: /styles
+Disallow: /svgs
+
+# Host
+Host: https://www.domain.com
+
+# Sitemaps
+Sitemap: https://www.domain.com/sitemap.xml

@@ -1,0 +1,18 @@
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// File: Centers
+// -------------------------------------------------------------
+
+@mixin flex-h-center {
+  display: flex !important;
+  justify-content: center !important;
+}
+
+@mixin flex-v-center {
+  align-items: center !important;
+  display: flex !important;
+}
+
+// Classes
+// -------------------------------------------------------------
+.flex-h-center  { @include flex-h-center; }
+.flex-v-center  { @include flex-v-center; }

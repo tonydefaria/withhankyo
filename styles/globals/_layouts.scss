@@ -1,0 +1,38 @@
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// File: Layout
+// -------------------------------------------------------------
+
+.primary,
+.secondary,
+.tertiary,
+.page,
+.header,
+.main,
+.footer {
+  float: left;
+  max-width: 100%;
+  width: 100%;
+}
+
+.header {
+}
+
+.main {
+  min-height: calc(100vh - 96px);
+  padding: 80px 16px;
+}
+
+.footer {
+}
+
+// Mobile
+// -------------------------------------------------------------
+@media #{$mobile} {
+  .main {
+    min-height: calc(100vh - 128px);
+    padding: 48px 16px;
+  }
+  .footer {
+    padding: 0 0 16px;
+  }
+}
