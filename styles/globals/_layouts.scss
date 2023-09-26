@@ -19,10 +19,11 @@
 
 .main {
   min-height: calc(100vh - 96px);
-  padding: 80px 16px;
+  padding: 160px 16px;
 }
 
 .footer {
+  padding: 16px;
 }
 
 // Mobile
@@ -30,9 +31,9 @@
 @media #{$mobile} {
   .main {
     min-height: calc(100vh - 128px);
-    padding: 48px 16px;
+    padding: 80px 16px;
   }
   .footer {
-    padding: 0 0 16px;
+    padding: 16px;
   }
 }

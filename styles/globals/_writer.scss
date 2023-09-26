@@ -29,16 +29,16 @@ $class: "writer";
   p {
     @include font-size-l;
     margin: 0 0 48px;
-    a {
-      text-decoration-thickness: 4px;
-      text-underline-offset: 7px;
-    }
     &:first-child {
       margin-top: 0;
     }
     &:last-child {
       margin-bottom: 0;
     }
+  }
+
+  p.font-size-m {
+    @include font-size-s;
   }
 
   ol,
@@ -51,10 +51,6 @@ $class: "writer";
       width: 100%;
       &:first-child { margin-top: 0; }
       &:last-child { margin-bottom: 0; }
-      a {
-        text-decoration-thickness: 3px;
-        text-underline-offset: 5px;
-      }
     }
     &:first-child {
       margin-top: 0;
@@ -95,19 +91,11 @@ $class: "writer";
     h6 { margin: 0 0 10px; }
     p {
       margin: 0 0 32px;
-      a {
-        text-decoration-thickness: 3px;
-        text-underline-offset: 6px;
-      }
     }
     ol, ul { margin: 0 0 32px; }
     ol, ul {
       li {
         margin: 8px 0;
-        a {
-          text-decoration-thickness: 2px;
-          text-underline-offset: 4px;
-        }
       }
     }
     figure { margin: 0 0 32px; }

@@ -12,7 +12,7 @@ $class: "brand";
     width: 100%;
     .#{$class}-item {
       float: left;
-      width: 60%;
+      width: 140px;
     }
   }
 }
@@ -23,7 +23,7 @@ $class: "brand";
   .#{$class} {
     .#{$class}-box {
       .#{$class}-item {
-        width: 80%;
+        width: 112px;
       }
     }
   }

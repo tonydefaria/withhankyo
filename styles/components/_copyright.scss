@@ -22,9 +22,9 @@ $class: "copyright";
 @media #{$mobile} {
   .#{$class} {
     .#{$class}-box {
-      padding: 8px;
+      padding: 8px 8px 8px 0;
       .#{$class}-item {
-        padding: 8px;
+        padding: 8px 8px 8px 0;
       }
     }
   }
