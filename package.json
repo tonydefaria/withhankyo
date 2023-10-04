@@ -10,7 +10,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "caniuse-lite": "^1.0.30001539",
+    "caniuse-lite": "^1.0.30001540",
     "next": "latest",
     "next-sitemap": "^4.2.3",
     "react": "^18.2.0",
