@@ -27,3 +27,41 @@
 .headroom--unpinned {
   transform: translateY(-100%) !important;
 }
+
+.mailer-lite {
+  width: 100%;
+  h4 {
+    font-family: $mono !important;
+  }
+  input.form-control {
+    width: 512px !important;
+    margin: 0 !important;
+    float: left;
+  }
+  button {
+    margin: 0 !important;
+    padding: 0 !important;
+    float: right;
+  }
+  .ml-form-embedWrapper,
+  .embedForm {
+    background-color: red !important;
+    width: 512px !important;
+    padding: 0 !important;
+  }
+
+  form {
+    float: left;
+    width: 100%;
+    * {
+      float: left;
+      width: 1024px;
+    }
+  }
+
+  .ml-form-embedBody,
+  .ml-form-embedBodyHorizontal,
+  .row-form {
+    padding: 0 !important;
+  }
+}

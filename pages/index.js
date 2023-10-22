@@ -29,7 +29,7 @@ export default function Index() {
         <p>We accomplish this by embracing a minimalist approach, making content management and web development an enjoyable experience. Our goal is to unleash your creative potential.</p>
         <p>The result? Hankyō, a Headless CMS crafted with love – a tool designed to support your upcoming micro and small projects.</p>
         <p>Launching in early 2024.</p>
-       {/* <div class="ml-embedded" data-form="mQza1P"></div> */}
+       {/*<div className="ml-embedded mailer-lite" data-form="mQza1P"></div>*/}
        <p className="font-size-m">By the way, &lsquo;Hankyō&rsquo; (反響) means &lsquo;echo&rsquo; or &lsquo;resonance&rsquo; in Japanese.</p>
       </div>
     </Layout>
